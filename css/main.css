@@ -636,7 +636,7 @@ span.brand-name {
   bottom: -5%;
 }
 .timeline-carousel h1 {
-  color: rgba(255, 255, 255, 1)
+  color: rgba(255, 255, 255, 1);
   font-weight: bold;
 }
 .timeline-carousel p {
@@ -1038,4 +1038,77 @@ display: none;
   top:55%;
  
 }
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.filters button:hover {
+  background-color: #FF008A;
+  color: #fff;
+  border-color: #FF008A;
+}
+
+.filters button:focus {
+outline: none;
+}
+
+.filters button.active {
+  background-color: #FF008A;
+  color: #fff;
+  border-color: #FF008A;
+}
+
+#web-app-filters button.active,
+#desktop-filters button.active,
+#low-code-filters button.active {
+  background-color: #FF008A;
+  color: #fff;
+  border-color: #FF008A;
+}
+
+.hidden {
+  display: none;
+}
+
+#web-app-filters, #desktop-filters, #low-code-filters {
+  margin-top: 10px;
+}
+
+#web-app-filters button, #desktop-filters button, #low-code-filters button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+ 
+  background-color: #e9ecef;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#web-app-filters button:hover, 
+#desktop-filters button:hover, 
+#low-code-filters button:hover {
+  background-color: #FF008A;
+  color: #fff;
+  border-color: #FF008A;
+}
+button:disabled {
+background-color: #e9ecef !important;
+color: #6c757d !important;
+cursor: not-allowed !important;
+border-color: #ddd;
 }
