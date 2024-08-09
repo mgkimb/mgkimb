@@ -76,3 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function() {
+        const content = this.querySelector('.card-content');
+        const isExpanded = this.classList.toggle('expanded');
+        content.style.display = isExpanded ? 'block' : 'none';
+    });
+});
+
+  
