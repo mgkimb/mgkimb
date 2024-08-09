@@ -116,6 +116,7 @@
         </div>
       </div>
     </div>
+    
     <div class="works-info" id="works">
       <div id = "works-heading" style = "margin-left: 10%;">
       <svg xmlns="http://www.w3.org/2000/svg" width="80" height="11" viewBox="0 0 80 11" fill="none">
@@ -138,8 +139,24 @@
         <span>WORKS</span>
       </h1>
 </div>
-      <div class="works">
-        <div class="work">
+
+<div class="filters">
+  <button id="filter-all">All</button>
+  <button id="filter-web-app">Web Application</button>
+  <button id="filter-desktop">Desktop Application</button>
+  <button id="filter-low-code">Low-Code Application</button>
+  <button id="filter-embedded">Embedded Systems</button>
+  <button id="filter-ui-ux">UI/UX Design</button>
+  <button id="filter-static">Static</button>
+  <button id="filter-laravel">Laravel</button>
+  <button id="filter-codeigniter">CodeIgniter 3</button>
+</div>
+
+
+<div class="works">
+  
+   
+        <div class="work web-development">
           <img src="images/v29_68.png" alt="Work 1">
           <a class="button" href="#">Learn More</a>
           <div class="additional-info">
@@ -672,3 +689,30 @@ carousel();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll("#filter-all, #filter-web-app, #filter-desktop, #filter-low-code, #filter-embedded, #filter-ui-ux, #filter-static, #filter-laravel, #filter-codeigniter");
+
+      filterButtons.forEach(button => {
+          button.addEventListener("click", function () {
+              const category = this.id.replace("filter-", "");
+
+              // Reset active class
+              filterButtons.forEach(btn => btn.classList.remove("active"));
+              this.classList.add("active");
+
+              // Filter works based on category
+              const works = document.querySelectorAll(".work");
+              works.forEach(work => {
+                  work.style.display = "none"; // Hide all works initially
+
+                  if (category === "all") {
+                      work.style.display = "block"; // Show all works for "All" category
+                  } else if (work.classList.contains(category)) {
+                      work.style.display = "block"; // Show works matching the selected category
+                  }
+              });
+          });
+      });
+  });
+</script>
