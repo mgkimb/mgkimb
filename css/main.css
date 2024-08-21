@@ -722,13 +722,27 @@ span.brand-name {
   text-decoration: none;
   position: relative;
 }
+
+.btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show>.btn-warning.dropdown-toggle {
+  color: #212529;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-warning.focus, .btn-warning:focus {
+  color: #212529;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
 .timeline-carousel__item-inner .read-more:after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
   width: 0;
-  border-bottom: 2px solid #ffc107;
+  border-bottom: 2px solid #ffffff;
   -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   -o-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
