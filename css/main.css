@@ -594,16 +594,24 @@ span.brand-name {
   color: white;
 }
 
-.footer svg {
+.footer i {
   background: #989898;
   padding: 5px;
   margin: 3px;
+  width: 40px;
+  height: 40px;
+  align-content: center;
 }
 
-.footer svg:hover {
+.footer i:hover {
   background: linear-gradient(218deg, #FE83C6 0%, #FF008A 100%);
   padding: 5px;
 }
+
+.footer a:hover {
+  color: #fff;
+}
+
 .timeline-carousel {
   margin: 0;
   font-family: "Roboto", sans-serif;
