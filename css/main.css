@@ -396,14 +396,15 @@ span.navbar__brand-name {
   align-items: flex-start!important;
 }
 
-.extra-curricular {
+#extra-curricular {
   flex: 100%;
-  padding: 10%; /* Remove padding */
+  padding: 5%; /* Remove padding */
   background: #ff0f91;
 }
 
-.extra-curricular h1 {
+#extra-curricular h1 {
   color: #FFF2F9;
+  margin: 2% 0;
 }
 .whattheysay {
   position: relative;
@@ -909,10 +910,14 @@ footer a:hover {
   right: 27px;
 }
 
-.education {
+#education {
   background: #fff2f9;
-  padding: 10%;
+  padding: 5%;
   color: #ff0f91;
+}
+
+#education h1 {
+  margin: 2% 0;
 }
   .education-timeline {
       position: relative;
