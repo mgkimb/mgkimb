@@ -148,6 +148,19 @@ span.navbar__brand-name {
   background-color: #ddd;
 }
 
+.gradient-box {
+  width: 80px;
+  height: 11px;
+  display: flex;
+  border-radius: 5.5px;
+  background: linear-gradient(to right, #FF008A 0%, #FF95EE 53%, #FA4EAB 100%), 
+              linear-gradient(to right, #FF008A 0%, #FF95EE 93%, #FF95EE 100%);
+  background-size: 61px 100%, 13px 100%;
+  background-position: left, right;
+  background-repeat: no-repeat;
+  margin: 5% 0%;
+}
+
 
 .about-me-and-skills {
   display: flex;
@@ -160,11 +173,11 @@ span.navbar__brand-name {
   padding: 5%;
 }
 
-.pink {
+.personal-info__name--highlight {
   color: #ff068b;
 }
 
-.skills-grid {
+.skills {
   flex: 60%;
   padding-top: 5%;
   padding-right: 5%;
@@ -174,7 +187,7 @@ span.navbar__brand-name {
   flex-wrap: wrap;
 }
 
-.skills {
+.skills article{
   width: 48%;
   padding: 20px;
   background: linear-gradient(218deg, #FE83C6 0%, #FF008A 100%);
@@ -183,11 +196,11 @@ span.navbar__brand-name {
   color: #FFF2F9;
 }
 
-.skills:hover {
+.skills article:hover {
   background: linear-gradient(218deg, #FF008A 0%, #FE83C6 100%);
 }
 
-.skills-content {
+.skills article .skills__content{
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center vertically */
@@ -195,13 +208,18 @@ span.navbar__brand-name {
   height: 100%; /* Ensures vertical centering */
   text-align: center;
 }
+.skills__content i {
+  font-size: 50px; 
+  color: #FFF2F9; 
+  margin-bottom: 1rem;
+}
 
-.skill-title {
+.skills__content h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.skill-description {
+.skills__content p {
   font-size: 16px;
 }
 
