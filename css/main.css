@@ -1154,10 +1154,14 @@ border-color: #ddd;}.experience {
   padding: 10%;
   color: #ff0f91;
 }
-.experience {
+#experience {
   background: #1f1f1f;
-  padding: 10%;
+  padding: 5%;
   color: #ff0f91;
+}
+
+#experience h1 {
+  margin: 2% 0;
 }
 .card-container {
   margin: 30px auto 0 auto;
@@ -1165,7 +1169,7 @@ border-color: #ddd;}.experience {
 
 .card {
   width: 100%;
- 
+  border: none;
   overflow: hidden;
   position: relative;
   display: flex;
