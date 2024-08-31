@@ -69,12 +69,18 @@ $.js = function (el) {
 
 
 function downloadCV() {
- 
+  // Create a temporary link element
   const link = document.createElement('a');
   link.href = 'images/files/BRELA-RESUME.pdf';
-  link.download = 'BRELA-RESUME.pdf';
+  link.download = 'BRELA-RESUME.pdf'; // Suggest a filename for the download
+
+  // Append the link to the body (required for Firefox)
   document.body.appendChild(link);
+
+  // Programmatically click the link
   link.click();
+
+  // Remove the link from the document
   document.body.removeChild(link);
 }
 
@@ -166,6 +172,40 @@ document.querySelectorAll('.card').forEach(card => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  gsap.from(".navbar__logo", {
+    duration: 1,
+    scale: 0.8,
+    opacity: 0,
+    ease: "back.out(1.7)"
+  });
+
+  gsap.from(".navbar__brand", {
+    duration: 1.5,
+    y: -50,
+    opacity: 0,
+    ease: "power2.out"
+  });
+
+  gsap.from(".navbar__links a", {
+    duration: 1.5,
+    opacity: 0,
+    y: 20,
+    stagger: 0.2,
+    ease: "bounce.out"
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.to(".portfolio-banner__overlay--image", {
+    duration: 1,
+    y: 20,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   const textElement = document.querySelector(".portfolio-banner__overlay--text");
 
   document.addEventListener("mousemove", (e) => {
@@ -184,15 +224,5 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: 0.3,
       ease: "power2.out"
     });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.to(".portfolio-banner__overlay--image", {
-    duration: 1,
-    y: 20,
-    repeat: -1,
-    yoyo: true,
-    ease: "sine.inOut"
   });
 });
