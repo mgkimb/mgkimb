@@ -1214,7 +1214,7 @@ border-color: #ddd;}.experience {
 }
 
 .card-content {
-  
+  overflow-y: auto;
   background-color: #fafafa;
   transition: max-height 0.3s ease, opacity 0.3s ease;
   max-height: 0; 
@@ -1227,14 +1227,16 @@ border-color: #ddd;}.experience {
   flex-direction: row; 
 }
 
+
 .card.expanded .card-img {
-  height: 100%; 
+  height: 100%;
   filter: grayscale(0%);
 }
 
 .card.expanded .card-content {
-  max-height: 1000px; 
-  opacity: 1; 
+  max-height: 600px;
+  opacity: 1;
+  overflow-y: auto;
 }
 
 .responsibilities {
