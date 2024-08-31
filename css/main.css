@@ -2,6 +2,8 @@ button:focus {
   outline: none;
 }
 
+
+
 body {
   background-color: #FFF2F9;
   font-family: Poppins!important;
@@ -158,19 +160,25 @@ span.navbar__brand-name {
   background-size: 61px 100%, 13px 100%;
   background-position: left, right;
   background-repeat: no-repeat;
-  margin: 5% 0%;
+
 }
 
 
-.about-me-and-skills {
+#about {
   display: flex;
   width: 100%;
+  padding: 0 5%;
+}
+
+#about h1 {
+  margin: 5% 0;
 }
 
 .personal-info {
   margin-top: 5%;
+  padding-right: 5%;
   flex: 40%;
-  padding: 5%;
+ 
 }
 
 .personal-info__name--highlight {
@@ -180,7 +188,6 @@ span.navbar__brand-name {
 .skills {
   flex: 60%;
   padding-top: 5%;
-  padding-right: 5%;
   border-radius: 40px;
   display: flex;
   justify-content: space-between;
@@ -223,14 +230,19 @@ span.navbar__brand-name {
   font-size: 16px;
 }
 
-.works-info {
-  flex: 100%;
-  padding: 10% 0 10% 0; /* Remove padding */ /* Remove margin */
+#works{
+
+  padding: 0 5% 5%;
   background: linear-gradient(183deg, #FFF2F9 25%, #FF008A 100%);
 }
 
-.works-heading {
-  margin-left: 10%!important;
+#works h1 {
+  margin: 2% 0;
+}
+
+.works-info {
+  margin-top: 5%;
+  
 }
 
 .works {

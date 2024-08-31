@@ -43,7 +43,7 @@
     </header>
 
   <main>
-    <section class="about-me-and-skills" id="about">
+    <section  id="about">
       <header class="personal-info">
         <div class="gradient-box"></div>
         <h1 class="personal-info__name">
@@ -88,65 +88,43 @@
         </article>
       </section>
     </section>
-    
-    <div class="works-info" id="works">
-      <div id = "works-heading" style = "margin-left: 10%;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="11" viewBox="0 0 80 11" fill="none">
-        <rect width="61" height="11" rx="5.5" transform="matrix(1 0 0 -1 0 11)" fill="url(#paint0_linear_29_6)" />
-        <rect width="13" height="11" rx="5.5" transform="matrix(1 0 0 -1 67 11)" fill="url(#paint1_linear_29_6)" />
-        <defs>
-          <linearGradient id="paint0_linear_29_6" x1="69" y1="5.94894e-06" x2="2.70737e-06" y2="11" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FF008A" />
-            <stop offset="0.531251" stop-color="#FF95EE" />
-            <stop offset="1" stop-color="#FA4EAB" />
-          </linearGradient>
-          <linearGradient id="paint1_linear_29_6" x1="6.5" y1="0" x2="6.5" y2="11" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FF008A" />
-            <stop offset="0.927101" stop-color="#FF95EE" />
-            <stop offset="0.994812" stop-color="#FF95EE" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <h1>
-        <span>WORKS</span>
-      </h1>
-    
-    <div class="filters">
-      <button id="filter-all">All</button>
-      <button id="filter-web-app">Web Application</button>
-      <button id="filter-desktop">Desktop Application</button>
-      <button id="filter-low-code">Low-Code Application</button>
-      <button id="filter-ui-ux">UI/UX Design</button>
-  
-      <div id="web-app-filters" class="hidden">
-          <button id="filter-bootstrap">Bootstrap</button>
-          <button id="filter-laravel">Laravel</button>
-          <button id="filter-codeigniter">CodeIgniter 3</button>
-      </div>
-      <div id="desktop-filters" class="hidden">
-          <button id="filter-java">Java</button>
-          <button id="filter-cpp" disabled>C++</button>
-      </div>
-      
-      <div id="low-code-filters" class="hidden">
-          <button id="filter-appsheet">AppSheet</button>
-          <button id="filter-webflow" disabled>Webflow</button>
-          <button id="filter-wix" disabled>Wix</button>
-      </div>
-    </div>
-</div>
 
-<div class="works">
-   
+    <section id="works">
+      <header class="works-info">
+        <div class="gradient-box"></div>
+        <h1>WORKS</h1>
+      </header>
+      <div class="filters">
+        <button id="filter-all">All</button>
+        <button id="filter-web-app">Web Application</button>
+        <button id="filter-desktop">Desktop Application</button>
+        <button id="filter-low-code">Low-Code Application</button>
+        <button id="filter-ui-ux">UI/UX Design</button>
+    
+        <div id="web-app-filters" class="hidden">
+            <button id="filter-bootstrap">Bootstrap</button>
+            <button id="filter-laravel">Laravel</button>
+            <button id="filter-codeigniter">CodeIgniter 3</button>
+        </div>
+        <div id="desktop-filters" class="hidden">
+            <button id="filter-java">Java</button>
+            <button id="filter-cpp" disabled>C++</button>
+        </div>
+        <div id="low-code-filters" class="hidden">
+            <button id="filter-appsheet">AppSheet</button>
+            <button id="filter-webflow" disabled>Webflow</button>
+            <button id="filter-wix" disabled>Wix</button>
+        </div>
+      </div>
+      <section class="works">
         <div class="work web-app codeigniter bootstrap">
           <img src="images/v29_68.png" alt="Work 1">
           <a class="button" href="#">Learn More</a>
           <div class="additional-info">
             <h2>Hospital Finder Platform</h2>
-            <p>MediTect  is an easy-to-use website helping users find nearby hospitals and 
-              manage their health accounts effortlessly. This project was a standout in APC Bootcamp and was prominently featured on the school's website.</p>
-            <p class = "tech"> This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction, along with CodeIgniter and PHP for backend tasks, and MySQL for database management. It was hosted on Heroku for a year.</p>
-            </div>
+            <p>MediTect is an easy-to-use website helping users find nearby hospitals and manage their health accounts effortlessly. This project was a standout in APC Bootcamp and was prominently featured on the school's website.</p>
+            <p class="tech"> This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction, along with CodeIgniter and PHP for backend tasks, and MySQL for database management. It was hosted on Heroku for a year.</p>
+          </div>
         </div>
         <div class="work web-app bootstrap ">
           <img src="images/v29_69.png" alt="Work 2">
@@ -154,7 +132,7 @@
           <div class="additional-info">
             <h2>Company Website</h2>
             <p>A website showcasing company information, product catalogs, and a collection of articles related to the company's offerings. This project received the highest grade in my first-year class IT130L-AM1 at Mapua.</p>
-            <p class = "tech">This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction. It was hosted on 000webhost for a year.</p>
+            <p class="tech">This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction. It was hosted on 000webhost for a year.</p>
           </div>
         </div>
         <div class="work desktop java">
@@ -163,7 +141,7 @@
           <div class="additional-info">
             <h2>Condo Unit Rental, Sales, and Management System</h2>
             <p>A Java GUI application designed to specify condo details, manage unit sales or leases, and generate comprehensive reports detailing the status of various condominiums.</p>
-            <p class = "tech">This application uses Swing libraries for an intuitive user interface and applies object-oriented programming (OOP) principles in Java development.</p>
+            <p class="tech">This application uses Swing libraries for an intuitive user interface and applies object-oriented programming (OOP) principles in Java development.</p>
           </div>
         </div>
         <div class="work web-app bootstrap">
@@ -172,7 +150,7 @@
           <div class="additional-info">
             <h2>Student Organization Management System</h2>
             <p>CardinalOrg is a front-end website offering school organization listings, member registration, and administrative tools for event applications. Administrators have access to performance-related reports for better organizational insights.</p>
-            <p class = "tech">This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction. </p>
+            <p class="tech">This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction. </p>
           </div>
         </div>
         <div class="work ui-ux">
@@ -181,7 +159,7 @@
           <div class="additional-info">
             <h2>Salon Services Appointment System</h2>
             <p>A website interface designed via Figma, presenting company information, client testimonials, service catalogs, and a streamlined booking system for salon appointments.</p>
-            <p class = "tech"> </p>
+            <p class="tech"></p>
           </div>
         </div>
         <div class="work web-app bootstrap">
@@ -190,7 +168,7 @@
           <div class="additional-info">
             <h2>Church Event Booking System</h2>
             <p>A website enabling seamless event bookings within a church environment. It simplifies event browsing and reservations for congregants, while offering an intuitive admin interface for church administrators to efficiently manage events, registrations, and attendee lists.</p>
-            <p class = "tech">This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction, along PHP for backend tasks, and MySQL for database management. It was hosted on 000webhost for a year.</p>
+            <p class="tech">This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction, along PHP for backend tasks, and MySQL for database management. It was hosted on 000webhost for a year.</p>
           </div>
         </div>
         <div class="work desktop java">
@@ -199,7 +177,7 @@
           <div class="additional-info">
             <h2>Clicking Game</h2>
             <p>Clickers is a game presenting a timed clicking challenge with options for static clicking and navigating a moving object. It aims to engage players in an exciting test of speed and accuracy.</p>
-            <p class = "tech">This Java-based application incorporated engaging mouse, menu, and timer events.</p>
+            <p class="tech">This Java-based application incorporated engaging mouse, menu, and timer events.</p>
           </div>
         </div>
         <div class="work ui-ux">
@@ -216,18 +194,16 @@
           <div class="additional-info">
             <h2>Zoo Management System</h2>
             <p>A website designed to manage animal and staff directories efficiently. It offers multiple features for staff management and detailed reports for enhanced operational insights.</p>
-            <p class = "tech">This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction, PHP for backend tasks, and MySQL for database management.</p>
+            <p class="tech">This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction, PHP for backend tasks, and MySQL for database management.</p>
           </div>
         </div>
-
         <div class="work web-app">
           <img src="images/10.png" alt="Work 1">
           <a class="button" href="#">Learn More</a>
           <div class="additional-info">
             <h2>AI-Powered Plant Disease Detection Platform</h2>
-            <p>GrowTogether is a website allowing users to track plant disease trends, analyze uploaded plant photos for conditions, and access educational resources on plant diseases. This was an entry  for the SATU SMART 2023 competition. 
-</p>
-<p class = "tech">This website's main features used HTML5 and CSS3 for frontend interaction while Python was utilized for developing the model for plant disease detection. Other features of the website can be seen in the developed Figma prototype. </p>
+            <p>GrowTogether is a website allowing users to track plant disease trends, analyze uploaded plant photos for conditions, and access educational resources on plant diseases. This was an entry for the SATU SMART 2023 competition. </p>
+            <p class="tech">This website's main features used HTML5 and CSS3 for frontend interaction while Python was utilized for developing the model for plant disease detection. Other features of the website can be seen in the developed Figma prototype. </p>
           </div>
         </div>
         <div class="work ui-ux">
@@ -236,7 +212,7 @@
           <div class="additional-info">
             <h2>Professional Social Networking Platform</h2>
             <p>Circunect is a web app interface designed via Figma, specifically connecting educational institutions and industries. It enables partnership facilitation, event coordination, and comprehensive project management features for enhanced collaboration.</p>
-            <p class = "tech"> </p>
+            <p class="tech"></p>
           </div>
         </div>
         <div class="work ui-ux">
@@ -245,7 +221,7 @@
           <div class="additional-info">
             <h2>Audit Management System</h2>
             <p>Audit.Edu is a web app interface designed via Figma, tailored for internal audits in higher educational institutions. It incorporates modules for audit, risk, complaint, and document management, streamlining administrative tasks and ensuring regulatory compliance.</p>
-            <p class = "tech"> </p>
+            <p class="tech"></p>
           </div>
         </div>
         <div class="work web-app codeigniter bootstrap">
@@ -253,7 +229,8 @@
           <a class="button" href="#">Learn More</a>
           <div class="additional-info">
             <h2>Transaction Processing System</h2>
-            <p>ProvisionSupply is a specialized website tailored for construction supply stores. This thesis project includes advanced modules for order processing, customer and user administration, product management, and detailed reporting, including sales forecasting.</p> <p class = "tech"> </p>
+            <p>ProvisionSupply is a specialized website tailored for construction supply stores. This thesis project includes advanced modules for order processing, customer and user administration, product management, and detailed reporting, including sales forecasting.</p>
+            <p class="tech"></p>
           </div>
         </div>
         <div class="work low-code appsheet">
@@ -262,7 +239,7 @@
           <div class="additional-info">
             <h2>Risk Tracker Application</h2>
             <p>RskRadar is a website developed as an intern project at Globe, designed to centralize and manage organizational risk data effectively. It allows users to analyze risk trends, access centralized organizational information, track team progress, monitor real-time risk statuses, and receive timely alerts.</p>
-            <p class = "tech"> </p>
+            <p class="tech"></p>
           </div>
         </div>
         <div class="work web-app laravel">
@@ -271,12 +248,12 @@
           <div class="additional-info">
             <h2>Announcement System</h2>
             <p>EGOVSMS is a website dedicated to streamlining government communication through SMS, featuring centralized announcements, event scheduling, subscriber management, and real-time alerts.</p>
-            <p class = "tech"> </p>
+            <p class="tech"></p>
           </div>
         </div>
-      </div>
-      <a class="certificates-btn" target="_blank" rel="noopener noreferrer" href="https://1drv.ms/f/s!AjhfCnZuudfngTBZ9JoBAn2lRXuP?e=CGzToQ" >View Certifications</a>
-    </div>
+      </section>
+      <a class="certificates-btn" target="_blank" rel="noopener noreferrer" href="https://1drv.ms/f/s!AjhfCnZuudfngTBZ9JoBAn2lRXuP?e=CGzToQ">View Certifications</a>
+    </section>
 
     <section class="experience" id="experience">
       <h1>EXPERIENCE</h1>
