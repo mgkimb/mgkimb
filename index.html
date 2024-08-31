@@ -14,25 +14,26 @@
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <div class="navbar">
-      <div class="brand">
-        <a href="index.html" style="text-decoration: none!important;">
-          <img src="images/v5_12.png" alt="Brand Logo">
-          <span class="brand-name">MG<class style="color: #FA4EAB; margin-top: -5%;">KIM</style><class style="color: #1E1E1E;">B</style>
+
+    <nav>
+      <div class="navbar__brand">
+        <a href="index.html" title="Homepage" aria-label="Go to homepage"  style="text-decoration: none!important;">
+          <img src="images/v5_12.png" alt="MG KIMB Brand Logo" class="navbar__logo">
+          <span class="navbar__brand-name">
+            MG<span class="brand-name-highlight">KIM</span>B
           </span>
         </a>
       </div>
-      <div class="navbar-links">
-        <a href="#about">About</a>
-        <a href="#works">Works</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#extra-curricular">Extracurriculars</a>
-      
-        <a href="#recommendations">What They Say</a>
-       
+      <div class="navbar__links" role="navigation">
+        <a href="#about" title="Learn more about me">About</a>
+        <a href="#works" title="See my works">Works</a>
+        <a href="#experience" title="View my experience">Experience</a>
+        <a href="#education" title="Check my education">Education</a>
+        <a href="#extra-curricular" title="Explore my extracurricular activities">Extracurriculars</a>
+       <a href="#recommendations" title="Read recommendations">What They Say</a>
       </div>
-    </div>
+    </nav>
+    
     <div class="portfolio-banner">
       <div class="gradient-overlay"></div>
       <div class="image-overlay"></div>
@@ -692,35 +693,37 @@ carousel();
         </div>
       </div>
     </section>
+
     <footer>
       <button></button>
       <section class="footer__container">
-          <section class="footer__contact">
-            <h3>Interested in working together? I'm just a message away.</h3>
-            <a target="_blank" rel="noopener noreferrer" href="mailto:mgkimb.contact@gmail.com" title="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/mgkimb" title="Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://msng.link/o?639668243702=vi" title="Viber">
-                <i class="fab fa-viber"></i>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://msng.link/o?639668243702=wa" title="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mgkimb/" title="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/mgkimb" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/mgkimb" title="Behance">
-                <i class="fab fa-behance"></i>
-            </a>
-          </section>
+        <section class="footer__contact">
+          <h3>Interested in working together? I'm just a message away.</h3>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:mgkimb.contact@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/mgkimb" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://msng.link/o?639668243702=vi" title="Viber">
+            <i class="fab fa-viber"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://msng.link/o?639668243702=wa" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mgkimb/" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/mgkimb" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/mgkimb" title="Behance">
+            <i class="fab fa-behance"></i>
+          </a>
         </section>
-      </footer>
+      </section>
+    </footer>
+
     <script src="js/cursor.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
