@@ -1,3 +1,7 @@
+button:focus {
+  outline: none;
+}
+
 body {
   background-color: #FFF2F9;
   font-family: Poppins!important;
@@ -73,7 +77,7 @@ span.navbar__brand-name {
 }
 
 /* Gradient overlay */
-.gradient-overlay {
+.portfolio-banner__overlay--gradient {
   width: 100%;
   height: 90%;
   background: linear-gradient(rgba(254,0,137,1), rgba(255,148,238,1));
@@ -84,8 +88,9 @@ span.navbar__brand-name {
   overflow: hidden;
 }
 
+
 /* Right side image overlap */
-.image-overlay {
+.portfolio-banner__overlay--image {
   width: 532px;
   min-height: 80vh;
   background: url("../images/v14_4.png");
@@ -98,8 +103,8 @@ span.navbar__brand-name {
   overflow: hidden;
 }
 
-/* Text content */
-.banner-text {
+
+.portfolio-banner__overlay--text {
   width: 90%; /* Adjust the width as needed */
   height: 60vh; /* Using 60% of the viewport height */
   background: url(../images/text-background.png);
@@ -108,58 +113,42 @@ span.navbar__brand-name {
   background-size: cover;
   position: absolute;
   top: 25%;
-  left: 5%; /* Adjust the left position as needed */
+  left: 10%; /* Adjust the left position as needed */
   overflow: hidden;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+
 }
 
-.welcome-message {
-  width: 60%; /* Adjust the width as needed */
-  color: rgba(255, 255, 255, 1);
+.portfolio-banner__overlay--text p {
   font-weight: medium; /* Correct the font-weight value */
   font-size: 3vw; /* Using viewport width as font size */
-  text-align: left;
-  padding: 2vw; /* Using viewport width for padding */
 }
 
-.portfolio-name {
-  width: 90%; /* Adjust the width as needed */
-  color: rgba(255, 255, 255, 1);
+.portfolio-banner__overlay--text h1 {
   position: absolute;
-  top: 4%; /* Adjust the top position as needed */
-  left: 0;
-  font-weight: bold; /* Correct the font-weight value */
-  font-size: 8vw; /* Using viewport width as font size */
-  text-align: left;
-  padding: 2vw; /* Using viewport width for padding */
+  top:10%;
+  font-weight: bolder; 
+  font-size: 8vw; 
+ 
 }
 
-
-/* Call-to-action button */
-.cta-button {
-  width: 256px;
+.portfolio-banner__overlay--text button {
+    width: 256px;
     height: 64px;
     background: rgba(255,242,249,1);
     position: absolute;
     top: 55%;
-    /* left: 105px; */
     border-radius: 35px;
     overflow: hidden;
+    border: none;
 }
 
-.cta-button-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.cta-button:hover {
+.portfolio-banner__overlay--text button:hover {
   background-color: #ddd;
 }
+
+
 .about-me-and-skills {
   display: flex;
   width: 100%;
@@ -993,40 +982,40 @@ footer a:hover {
 
 /* For screens smaller than 768px */
 @media (max-width: 767px) {
-  .portfolio-name {
+  .portfolio-banner__overlay--text h1 {
     display: none;
 }
-.welcome-message {
+.portfolio-banner__overlay--text p  {
 display: none;
 }
-  .image-overlay {
+  .portfolio-banner__overlay--image {
     width: 100%;
     margin-top: -5%;
   }
-  .cta-button {
+  .portfolio-banner__overlay--text button {
     top:75%;
     left: 0;
   }
-  .banner-text {
+  .portfolio-banner__overlay-text {
     height: 100%;
   }
 
 }
 
-/* For screens between 768px and 991px */
+/* For screens betw-een 768px and 991px */
 @media (min-width: 768px) and (max-width: 991px) {
 
-  .portfolio-name {
+  .portfolio-banner__overlay--text h1 {
     display: none;
 }
-.welcome-message {
+.portfolio-banner__overlay--text p  {
 display: none;
 }
-  .image-overlay {
+  .portfolio-banner__overlay--image {
     width: 100%;
     margin-top: -5%;
   }
-  .cta-button {
+  .portfolio-banner__overlay--text button {
     top:75%;
     left: 0;
   }
@@ -1034,27 +1023,27 @@ display: none;
 }
 
 
-@media (min-width: 1200px) {
+@medi-a (min-width: 1200px) {
   
-  .portfolio-name {
+  .portfolio-banner__overlay--text h1 {
     font-size: 5vw;
 }
-.welcome-message {
+.portfolio-banner__overlay-text p {
   font-size: 2vw;
 }
 }
 
 @media (min-width: 1000px) {
-  .portfolio-name {
+  .portfolio-banner__overlay--text h1 {
     font-size: 5vw;
 }
-.welcome-message {
+.portfolio-banner__overlay--text p  {
   font-size: 2vw;
 }
-.image-overlay {
+.portfolio-banner__overlay--image {
   width: 50%;
 }
-.cta-button {
+.portfolio-banner__overlay--text button {
   top:55%;
  
 }

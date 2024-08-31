@@ -17,11 +17,9 @@
     <header>
       <nav>
         <div class="navbar__brand">
-          <a href="index.html" title="Homepage" aria-label="Go to homepage"  style="text-decoration: none!important;">
-            <img src="images/v5_12.png" alt="MG KIMB Brand Logo" class="navbar__logo">
-            <span class="navbar__brand-name">
-              MG<span class="brand-name-highlight">KIM</span>B
-            </span>
+          <a href="index.html" title="Homepage" aria-label="Go to homepage" style="text-decoration: none!important;">
+            <img src="images/v5_12.png" alt="Brand Logo" class="navbar__logo">
+            <span class="navbar__brand-name"> MG<span class="brand-name-highlight">KIM</span>B</span>
           </a>
         </div>
         <div class="navbar__links" role="navigation">
@@ -30,29 +28,21 @@
           <a href="#experience" title="View my experience">Experience</a>
           <a href="#education" title="Check my education">Education</a>
           <a href="#extra-curricular" title="Explore my extracurricular activities">Extracurriculars</a>
-        <a href="#recommendations" title="Read recommendations">What They Say</a>
+          <a href="#recommendations" title="What they say about me">What They Say</a>
         </div>
       </nav>
-    
-    <div class="portfolio-banner">
-      <div class="gradient-overlay"></div>
-      <div class="image-overlay"></div>
-      <div class="banner-text">
-        <div class="welcome-message">Hi, I’m Kim! Welcome to</div>
-        <div class="portfolio-name">
-          <b>my portfolio</b>
+      <section class="portfolio-banner" aria-labelledby="banner-title">
+        <div class="portfolio-banner__overlay--gradient" role="presentation"></div>
+        <div class="portfolio-banner__overlay--image" role="presentation"></div>
+        <div class="portfolio-banner__overlay--text">
+          <p>Hi, I’m Kim! Welcome to</p>
+          <h1>my portfolio</h1>
+          <button aria-label="Download my CV" onclick="downloadCV()">Download CV</button>
         </div>
-        <div class="cta-button">
-        <div class="cta-button-text"><a href = "images/files/BRELA-RESUME.pdf" download>Download CV</a></div>
-      </div>
-      </div>
-      
-  
-    </div>
+      </section>
+    </header>
 
-  </header>
-
-  
+  <main>
     <div class="about-me-and-skills" id="about">
       <div class="personal-info">
         <svg xmlns="http://www.w3.org/2000/svg" width="80" height="11" viewBox="0 0 80 11" fill="none">
@@ -698,7 +688,7 @@ carousel();
         </div>
       </div>
     </section>
-
+  </main>
     <footer>
       <button></button>
       <section class="footer__container">
@@ -734,6 +724,25 @@ carousel();
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/filter.js"></script>
+
+    <script>
+      function downloadCV() {
+        // Create a temporary link element
+        const link = document.createElement('a');
+        link.href = 'images/files/BRELA-RESUME.pdf';
+        link.download = 'BRELA-RESUME.pdf'; // Suggest a filename for the download
+    
+        // Append the link to the body (required for Firefox)
+        document.body.appendChild(link);
+    
+        // Programmatically click the link
+        link.click();
+    
+        // Remove the link from the document
+        document.body.removeChild(link);
+      }
+    </script>
+
   </body>
 </html>
 
