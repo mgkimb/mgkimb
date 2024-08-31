@@ -78,7 +78,6 @@ span.navbar__brand-name {
   margin: 0 5% 0 5%;
 }
 
-/* Gradient overlay */
 .portfolio-banner__overlay--gradient {
   width: 100%;
   height: 90%;
@@ -90,8 +89,6 @@ span.navbar__brand-name {
   overflow: hidden;
 }
 
-
-/* Right side image overlap */
 .portfolio-banner__overlay--image {
   width: 532px;
   min-height: 80vh;
@@ -107,15 +104,15 @@ span.navbar__brand-name {
 
 
 .portfolio-banner__overlay--text {
-  width: 90%; /* Adjust the width as needed */
-  height: 60vh; /* Using 60% of the viewport height */
+  width: 90%;
+  height: 60vh; 
   background: url(../images/text-background.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: absolute;
   top: 25%;
-  left: 10%; /* Adjust the left position as needed */
+  left: 10%; 
   overflow: hidden;
   text-align: left;
   color: rgba(255, 255, 255, 1);
@@ -123,8 +120,8 @@ span.navbar__brand-name {
 }
 
 .portfolio-banner__overlay--text p {
-  font-weight: medium; /* Correct the font-weight value */
-  font-size: 3vw; /* Using viewport width as font size */
+  font-weight: medium;
+  font-size: 3vw; 
 }
 
 .portfolio-banner__overlay--text h1 {
@@ -210,9 +207,9 @@ span.navbar__brand-name {
 .skills article .skills__content{
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  height: 100%; /* Ensures vertical centering */
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
   text-align: center;
 }
 .skills__content i {
@@ -368,7 +365,7 @@ span.navbar__brand-name {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  overflow: hidden; /* Hide overflow on card */
+  overflow: hidden; 
 }
 .carousel-inner {
   border-radius: 10px;
@@ -398,7 +395,7 @@ span.navbar__brand-name {
 
 #extra-curricular {
   flex: 100%;
-  padding: 5%; /* Remove padding */
+  padding: 5%;
   background: #ff0f91;
 }
 
@@ -608,7 +605,6 @@ footer h3{
   font-size: 100%;
   font-weight: bold;
   margin-top: 5%;
-  /* margin-left: 40px; */
   color: white;
 }
 
@@ -1014,8 +1010,6 @@ footer a:hover {
   margin: 0;
 }
 
-
-/* For screens smaller than 768px */
 @media (max-width: 767px) {
   .portfolio-banner__overlay--text h1 {
     display: none;
@@ -1037,7 +1031,6 @@ display: none;
 
 }
 
-/* For screens betw-een 768px and 991px */
 @media (min-width: 768px) and (max-width: 991px) {
 
   .portfolio-banner__overlay--text h1 {
@@ -1181,7 +1174,7 @@ border-color: #ddd;}.experience {
   flex-direction: column;
   transition: all 0.3s ease;
   margin: 10px auto;
-  cursor: pointer; /* Indicates that the card is clickable */
+  cursor: pointer;
 }
 
 .card-header {
@@ -1209,7 +1202,7 @@ border-color: #ddd;}.experience {
 .card-flex {
   display: flex;
   flex-direction: column;
-  transition: flex-direction 0.3s ease; /* Note: flex-direction is not directly animatable */
+  transition: flex-direction 0.3s ease; 
 }
 
 .card-img {
@@ -1224,24 +1217,24 @@ border-color: #ddd;}.experience {
   
   background-color: #fafafa;
   transition: max-height 0.3s ease, opacity 0.3s ease;
-  max-height: 0; /* Start with no height */
+  max-height: 0; 
   overflow: hidden;
-  opacity: 0; /* Start hidden */
+  opacity: 0; 
   flex: 0.4;
 }
 
 .card.expanded .card-flex {
-  flex-direction: row; /* Change direction when expanded */
+  flex-direction: row; 
 }
 
 .card.expanded .card-img {
-  height: 100%; /* Adjust based on your layout needs */
+  height: 100%; 
   filter: grayscale(0%);
 }
 
 .card.expanded .card-content {
-  max-height: 1000px; /* Large enough to accommodate content */
-  opacity: 1; /* Fully visible */
+  max-height: 1000px; 
+  opacity: 1; 
 }
 
 .responsibilities {
