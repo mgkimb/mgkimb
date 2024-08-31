@@ -37,7 +37,7 @@ $.js('timeline-carousel').slick({
 });
 }
 
-carousel();
+carousel(); 
 
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".button");
