@@ -1237,6 +1237,7 @@ border-color: #ddd;}.experience {
   max-height: 600px;
   opacity: 1;
   overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .responsibilities {
@@ -1277,3 +1278,4 @@ border-color: #ddd;}.experience {
 .personal-info__name--highlight:nth-of-type(3){
   margin-right: 10px; 
 }
+

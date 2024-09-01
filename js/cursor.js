@@ -262,3 +262,25 @@ nameElement.addEventListener('mouseenter', () => {
 nameElement.addEventListener('mouseleave', () => {
   animateHighlights(false);
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const timelinePoints = document.querySelectorAll('.vtimeline-point');
+
+  timelinePoints.forEach(point => {
+    point.addEventListener('mouseenter', () => {
+      gsap.to(point.querySelector('.vtimeline-content'), {
+        scale: 1.1,  
+        duration: 0.5,
+        ease: "power2.out"
+      });
+    });
+
+    point.addEventListener('mouseleave', () => {
+      gsap.to(point.querySelector('.vtimeline-content'), {
+        scale: 1,   
+        duration: 0.5,
+        ease: "power2.out"
+      });
+    });
+  });
+});
+
