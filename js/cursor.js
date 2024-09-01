@@ -69,18 +69,12 @@ $.js = function (el) {
 
 
 function downloadCV() {
-  // Create a temporary link element
+
   const link = document.createElement('a');
   link.href = 'images/files/BRELA-RESUME.pdf';
-  link.download = 'BRELA-RESUME.pdf'; // Suggest a filename for the download
-
-  // Append the link to the body (required for Firefox)
+  link.download = 'BRELA-RESUME.pdf'; 
   document.body.appendChild(link);
-
-  // Programmatically click the link
   link.click();
-
-  // Remove the link from the document
   document.body.removeChild(link);
 }
 
@@ -225,4 +219,46 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power2.out"
     });
   });
+});
+
+
+gsap.utils.toArray(".skills article").forEach((article) => {
+  article.addEventListener("mouseenter", () => {
+    gsap.to(article, {
+      x: 10,   
+      y: -10,  
+      duration: 0.5,
+      ease: "power2.out"
+    });
+  });
+
+  article.addEventListener("mouseleave", () => {
+    gsap.to(article, {
+      x: 0,
+      y: 0,
+      duration: 0.5,
+      ease: "power2.out"
+    });
+  });
+});
+function animateHighlights(isHovering) {
+  gsap.to('.personal-info__name--highlight', {
+    y: isHovering ? -10 : 0,
+    duration: 0.3,
+    ease: "power1.inOut",
+    stagger: {
+      amount: 0.5,
+      from: "start"
+    }
+  });
+}
+
+const nameElement = document.querySelector('.personal-info__name');
+
+nameElement.addEventListener('mouseenter', () => {
+  animateHighlights(true);
+});
+
+nameElement.addEventListener('mouseleave', () => {
+  animateHighlights(false);
 });

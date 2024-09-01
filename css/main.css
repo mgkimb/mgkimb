@@ -1257,3 +1257,23 @@ border-color: #ddd;}.experience {
 .conference-role p {
   margin-bottom: 0;
 }
+
+.personal-info__name {
+  display: flex;
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+
+.personal-info__name--highlight {
+  color: #ff068b;
+  margin-right: 2px; 
+}
+
+
+.personal-info__name--highlight:nth-of-type(2), .personal-info__name--highlight:nth-of-type(3),.personal-info__name--highlight:nth-of-type(4)  {
+  margin-left: 10px; 
+}
+
+.personal-info__name--highlight:nth-of-type(3){
+  margin-right: 10px; 
+}
