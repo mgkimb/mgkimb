@@ -284,3 +284,29 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+$(document).ready(function() {
+  $('.learn-more').click(function(e) {
+    e.preventDefault();
+    var target = $(this).data('target');
+    var workInfo = $(this).closest('.work').find('.additional-info');
+
+    // Update popup content
+    $('#popup-title').text(workInfo.find('h2').text());
+    $('#popup-description').text(workInfo.find('p').first().text());
+    $('#popup-tech').text(workInfo.find('.tech').text());
+    $('#popup-img').attr('src', $(this).closest('.work').find('img').attr('src'));
+
+    // Show popup
+    $('#popup').fadeIn();
+  });
+
+  $('.close-btn').click(function() {
+    $('#popup').fadeOut();
+  });
+
+  $(window).click(function(event) {
+    if ($(event.target).is('#popup')) {
+      $('#popup').fadeOut();
+    }
+  });
+});
