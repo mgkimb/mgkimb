@@ -337,13 +337,18 @@ document.addEventListener("DOMContentLoaded", () => {
           dashElement.style.display = selectedWork.modalName && selectedWork.modalTitle ? 'inline' : 'none';
 
           const techIcons = {
+            "Git": "<i class='fab fa-git'></i> Git",
             "HTML5": "<i class='fab fa-html5'></i> HTML5",
             "CSS3": "<i class='fab fa-css3-alt'></i> CSS3",
             "JavaScript": "<i class='fab fa-js-square'></i> JavaScript",
             "Bootstrap": "<i class='fab fa-bootstrap'></i> Bootstrap",
             "CodeIgniter": "<i class='fab fa-php'></i> CodeIgniter",
             "PHP": "<i class='fab fa-php'></i> PHP",
-            "MySQL": "<i class='fab fa-database'></i> MySQL"
+            "MySQL": "<i class='fas fa-database'></i> MySQL",
+            "Heroku": "<i class='fas fa-cube'></i> Heroku",
+            "Java": "<i class='fa fa-coffee'></i> Java",
+            "000webhost": "<i class='fa fa-globe'></i> 000webhost",
+            "Trello": "<i class='fab fa-trello'></i> Trello"
           };
           document.getElementById('modalTech').innerHTML = selectedWork.tech.split(', ').map(tech => `<div class="tech-button">${techIcons[tech] || tech}</div>`).join('');
 
@@ -369,6 +374,14 @@ document.addEventListener("DOMContentLoaded", () => {
             behanceButton.style.display = 'inline-block';
           } else {
             behanceButton.style.display = 'none';
+          }
+
+          const article1Button = document.getElementById('modalArticle1');
+          if (selectedWork.Article1) {
+            article1Button.href = selectedWork.Article1;
+            article1Button.style.display = 'inline-block';
+          } else {
+            article1Button.style.display = 'none';
           }
 
           const sourceCodeButton = document.getElementById('modalSourceCode');

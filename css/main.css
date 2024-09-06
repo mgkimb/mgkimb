@@ -1416,3 +1416,7 @@ border-color: #ddd;}.experience {
   width: 100%; /* or a specific value like 640px */
   height: auto;
 }
+
+.worklink i {
+  margin-right: 5px;
+}
