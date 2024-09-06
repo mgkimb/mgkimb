@@ -113,67 +113,79 @@
           </div>
         </div>
 
-        <section class="works" id = "works-container">
-          <!-- Modal template -->
-         <!-- Modal template -->
-<!-- Modal template -->
-<div class="modal fade" id="workModal" tabindex="-1" role="dialog" aria-labelledby="workModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="workModalLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="" alt="Work Image" id="modalImage" class="img-fluid">
-                        <!-- Technologies Used -->
-            <h6>Technologies Used:</h6>
-           <div id="modalTech" class="tech-buttons"></div>
+        <section class="works" id="works-container">
+          <div class="modal fade" id="workModal" tabindex="-1" role="dialog" aria-labelledby="workModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+               
+                      <h5 class="modal-title" id="workModalLabel"></h5>
+                      <h5 class="modal-title" id="modalDash"> | </h5>
+                      <h5 class="modal-title" id="workModalName"></h5>
+                   
 
-        
-                        
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- Carousel for images and videos -->
+                      <div id="modalCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" id="carouselInner">
+                          <!-- Carousel items will be inserted here -->
+                        </div>
+                        <a class="carousel-control-prev" href="#modalCarousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#modalCarousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      <div class="modal-datecreated">
+                        <p class="workModalDate">Date Created:</p>
+                        <p id="workModalDate"></p>
+                      </div>
+                      <div id="modalTech" class="tech-buttons"></div>
+                    </div>
+                    <div class="col-md-6">
+                      <h6>Overview</h6>
+                      <p id="modalOverview"></p>
+                      <ul id="modalFeatures"></ul>
+                      <h6>Development Process</h6>
+                      <p id="modalProcess"></p>
+                      <h6>Results & Recognitions</h6>
+                      <p id="modalResults"></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="modal-footer">
+                  <div class="worklink">
+                    <a href="#" id="modalLiveSite" class="btn btn-worklink" target="_blank">
+                      <i class="fas fa-external-link-alt"></i> Live Site
+                    </a>
+                    <a href="#" id="modalFigma" class="btn btn-worklink" target="_blank">
+                      <i class="fab fa-figma"></i> Figma
+                    </a>
+                    <a href="#" id="modalBehance" class="btn btn-worklink" target="_blank">
+                      <i class="fab fa-behance"></i> Behance
+                    </a>
+                    <a href="#" id="modalSourceCode" class="btn btn-worklink" target="_blank">
+                      <i class="fas fa-code"></i> Source Code
+                    </a>
+                  </div>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <!-- Overview -->
-            <h6>Overview:</h6>
-            <p id="modalOverview"></p>
-            
-            <!-- Features -->
-            <h6>Features:</h6>
-            <ul id="modalFeatures"></ul>
-            
-
-            <!-- Development Process -->
-            <h6>Development Process:</h6>
-            <p id="modalProcess"></p>
-            
-            <!-- Results -->
-            <h6>Results:</h6>
-            <p id="modalResults"></p>
-            
-            <!-- Buttons -->
-           
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <div class="mt-3">
-          <a href="#" id="modalLiveSite" class="btn btn-primary" target="_blank">Live Site</a>
-          <a href="#" id="modalFigma" class="btn btn-secondary" target="_blank">Figma</a>
-          <a href="#" id="modalSourceCode" class="btn btn-info" target="_blank">Source Code</a>
-        </div>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
         </section>
       </section>
+        
         
         
         <!--

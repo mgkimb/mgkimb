@@ -283,14 +283,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-
 document.addEventListener("DOMContentLoaded", () => {
   fetch("works.json")
     .then(response => response.json())
     .then(data => {
       const worksContainer = document.getElementById("works-container");
       data.forEach(work => {
-        // Create work item
         const workItem = document.createElement("div");
         workItem.className = `work ${work.category}`;
         workItem.innerHTML = `
@@ -300,36 +298,86 @@ document.addEventListener("DOMContentLoaded", () => {
         worksContainer.appendChild(workItem);
       });
 
-      // Event listener for Learn More buttons
       document.querySelectorAll('.learn-more').forEach(button => {
         button.addEventListener('click', function () {
           const workId = this.getAttribute('data-id');
           const selectedWork = data.find(work => work.id === workId);
 
-          // Update modal content
+          document.getElementById('workModalName').textContent = selectedWork.modalName;
           document.getElementById('workModalLabel').textContent = selectedWork.modalTitle;
-          document.getElementById('modalImage').src = selectedWork.image;
+          document.getElementById('workModalDate').textContent = selectedWork.modalDate;
+
+          // Populate carousel
+          const carouselInner = document.getElementById('carouselInner');
+          carouselInner.innerHTML = '';
+          if (selectedWork.media && selectedWork.media.length) {
+            selectedWork.media.forEach((item, index) => {
+              const isActive = index === 0 ? 'active' : '';
+              let itemHtml = `
+                <div class="carousel-item ${isActive}">
+                  ${item.type === 'video' ? `<video controls><source src="${item.src}" type="video/mp4"></video>` : `<img src="${item.src}" class="d-block w-100" alt="${selectedWork.modalTitle}">`}
+                </div>
+              `;
+              carouselInner.insertAdjacentHTML('beforeend', itemHtml);
+            });
+          } else {
+            carouselInner.innerHTML = `
+              <div class="carousel-item active">
+                <img src="${selectedWork.image}" class="d-block w-100" alt="${selectedWork.modalTitle}">
+              </div>
+            `;
+          }
+
           document.getElementById('modalOverview').textContent = selectedWork.overview;
           document.getElementById('modalFeatures').innerHTML = selectedWork.features.map(feature => `<li>${feature}</li>`).join('');
           document.getElementById('modalProcess').textContent = selectedWork.process;
           document.getElementById('modalResults').textContent = selectedWork.results;
 
-          // Update Technologies Used with Font Awesome icons as non-clickable buttons
+          const dashElement = document.getElementById('modalDash');
+          dashElement.style.display = selectedWork.modalName && selectedWork.modalTitle ? 'inline' : 'none';
+
           const techIcons = {
             "HTML5": "<i class='fab fa-html5'></i> HTML5",
             "CSS3": "<i class='fab fa-css3-alt'></i> CSS3",
             "JavaScript": "<i class='fab fa-js-square'></i> JavaScript",
             "Bootstrap": "<i class='fab fa-bootstrap'></i> Bootstrap",
-            "CodeIgniter": "<i class='fab fa-php'></i> CodeIgniter", // Placeholder icon
+            "CodeIgniter": "<i class='fab fa-php'></i> CodeIgniter",
             "PHP": "<i class='fab fa-php'></i> PHP",
             "MySQL": "<i class='fab fa-database'></i> MySQL"
           };
           document.getElementById('modalTech').innerHTML = selectedWork.tech.split(', ').map(tech => `<div class="tech-button">${techIcons[tech] || tech}</div>`).join('');
 
-          // Set buttons' href attributes
-          document.getElementById('modalLiveSite').href = selectedWork.liveSite;
-          document.getElementById('modalFigma').href = selectedWork.figma;
-          document.getElementById('modalSourceCode').href = selectedWork.sourceCode;
+          const liveSiteButton = document.getElementById('modalLiveSite');
+          if (selectedWork.liveSite) {
+            liveSiteButton.href = selectedWork.liveSite;
+            liveSiteButton.style.display = 'inline-block';
+          } else {
+            liveSiteButton.style.display = 'none';
+          }
+
+          const figmaButton = document.getElementById('modalFigma');
+          if (selectedWork.figma) {
+            figmaButton.href = selectedWork.figma;
+            figmaButton.style.display = 'inline-block';
+          } else {
+            figmaButton.style.display = 'none';
+          }
+
+          const behanceButton = document.getElementById('modalBehance');
+          if (selectedWork.behance) {
+            behanceButton.href = selectedWork.behance;
+            behanceButton.style.display = 'inline-block';
+          } else {
+            behanceButton.style.display = 'none';
+          }
+
+          const sourceCodeButton = document.getElementById('modalSourceCode');
+          if (selectedWork.sourceCode) {
+            sourceCodeButton.href = selectedWork.sourceCode;
+            sourceCodeButton.style.display = 'inline-block';
+          } else {
+            sourceCodeButton.style.display = 'none';
+          }
         });
       });
     })
@@ -342,13 +390,11 @@ $(document).ready(function() {
     var target = $(this).data('target');
     var workInfo = $(this).closest('.work').find('.additional-info');
 
-    // Update popup content
     $('#popup-title').text(workInfo.find('h2').text());
     $('#popup-description').text(workInfo.find('p').first().text());
     $('#popup-tech').text(workInfo.find('.tech').text());
     $('#popup-img').attr('src', $(this).closest('.work').find('img').attr('src'));
 
-    // Show popup
     $('#popup').fadeIn();
   });
 
