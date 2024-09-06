@@ -113,44 +113,67 @@
           </div>
         </div>
 
-        <section class="works">
-          <!-- Work Item -->
-          <div class="work web-app codeigniter bootstrap">
-            <img src="images/v29_68.png" alt="Work 1">
-            <a class="btn btn-primary" data-toggle="modal" data-target="#work1Modal">Learn More</a>
-          </div>
-          
-          <!-- Modal Structure -->
-          <div class="modal fade" id="work1Modal" tabindex="-1" role="dialog" aria-labelledby="work1ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="work1ModalLabel">Hospital Finder Platform</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <img src="images/v29_68.png" alt="Work 1" class="img-fluid">
-                    </div>
-                    <div class="col-md-6">
-                      <p>MediTect is an easy-to-use website helping users find nearby hospitals and manage their health accounts effortlessly. This project was a standout in APC Bootcamp and was prominently featured on the school's website.</p>
-                      <p class="tech">This website used HTML5, CSS3, JavaScript, and Bootstrap for frontend interaction, along with CodeIgniter and PHP for backend tasks, and MySQL for database management. It was hosted on Heroku for a year.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Modal Structure -->
+        <section class="works" id = "works-container">
+          <!-- Modal template -->
+         <!-- Modal template -->
+<!-- Modal template -->
+<div class="modal fade" id="workModal" tabindex="-1" role="dialog" aria-labelledby="workModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="workModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="" alt="Work Image" id="modalImage" class="img-fluid">
+                        <!-- Technologies Used -->
+            <h6>Technologies Used:</h6>
+           <div id="modalTech" class="tech-buttons"></div>
+
         
-          <!-- Repeat for other work items -->
+                        
+          </div>
+          <div class="col-md-6">
+            <!-- Overview -->
+            <h6>Overview:</h6>
+            <p id="modalOverview"></p>
+            
+            <!-- Features -->
+            <h6>Features:</h6>
+            <ul id="modalFeatures"></ul>
+            
+
+            <!-- Development Process -->
+            <h6>Development Process:</h6>
+            <p id="modalProcess"></p>
+            
+            <!-- Results -->
+            <h6>Results:</h6>
+            <p id="modalResults"></p>
+            
+            <!-- Buttons -->
+           
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="mt-3">
+          <a href="#" id="modalLiveSite" class="btn btn-primary" target="_blank">Live Site</a>
+          <a href="#" id="modalFigma" class="btn btn-secondary" target="_blank">Figma</a>
+          <a href="#" id="modalSourceCode" class="btn btn-info" target="_blank">Source Code</a>
+        </div>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
         </section>
+      </section>
         
         
         <!--

@@ -284,6 +284,58 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("works.json")
+    .then(response => response.json())
+    .then(data => {
+      const worksContainer = document.getElementById("works-container");
+      data.forEach(work => {
+        // Create work item
+        const workItem = document.createElement("div");
+        workItem.className = `work ${work.category}`;
+        workItem.innerHTML = `
+          <img src="${work.image}" alt="${work.modalTitle}">
+          <a href="#" class="button learn-more" data-toggle="modal" data-target="#workModal" data-id="${work.id}">Learn More</a>
+        `;
+        worksContainer.appendChild(workItem);
+      });
+
+      // Event listener for Learn More buttons
+      document.querySelectorAll('.learn-more').forEach(button => {
+        button.addEventListener('click', function () {
+          const workId = this.getAttribute('data-id');
+          const selectedWork = data.find(work => work.id === workId);
+
+          // Update modal content
+          document.getElementById('workModalLabel').textContent = selectedWork.modalTitle;
+          document.getElementById('modalImage').src = selectedWork.image;
+          document.getElementById('modalOverview').textContent = selectedWork.overview;
+          document.getElementById('modalFeatures').innerHTML = selectedWork.features.map(feature => `<li>${feature}</li>`).join('');
+          document.getElementById('modalProcess').textContent = selectedWork.process;
+          document.getElementById('modalResults').textContent = selectedWork.results;
+
+          // Update Technologies Used with Font Awesome icons as non-clickable buttons
+          const techIcons = {
+            "HTML5": "<i class='fab fa-html5'></i> HTML5",
+            "CSS3": "<i class='fab fa-css3-alt'></i> CSS3",
+            "JavaScript": "<i class='fab fa-js-square'></i> JavaScript",
+            "Bootstrap": "<i class='fab fa-bootstrap'></i> Bootstrap",
+            "CodeIgniter": "<i class='fab fa-php'></i> CodeIgniter", // Placeholder icon
+            "PHP": "<i class='fab fa-php'></i> PHP",
+            "MySQL": "<i class='fab fa-database'></i> MySQL"
+          };
+          document.getElementById('modalTech').innerHTML = selectedWork.tech.split(', ').map(tech => `<div class="tech-button">${techIcons[tech] || tech}</div>`).join('');
+
+          // Set buttons' href attributes
+          document.getElementById('modalLiveSite').href = selectedWork.liveSite;
+          document.getElementById('modalFigma').href = selectedWork.figma;
+          document.getElementById('modalSourceCode').href = selectedWork.sourceCode;
+        });
+      });
+    })
+    .catch(error => console.error('Error loading works:', error));
+});
+
 $(document).ready(function() {
   $('.learn-more').click(function(e) {
     e.preventDefault();

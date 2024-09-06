@@ -304,6 +304,7 @@ span.navbar__brand-name {
   opacity: 1;
   background-color: #FF008A;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .button.active {
@@ -1325,4 +1326,33 @@ border-color: #ddd;}.experience {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.tech-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: default; /* Non-clickable */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tech-button:hover {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.tech-button i {
+  margin-right: 5px;
 }

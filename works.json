@@ -1,0 +1,31 @@
+[
+    {
+      "id": "work1",
+      "category": "web-app codeigniter bootstrap",
+      "image": "images/v29_68.png",
+      "modalTitle": "Hospital Finder Platform",
+      "overview": "MediTect is an easy-to-use website helping users find nearby hospitals and manage their health accounts effortlessly.",
+      "features": ["Find hospitals", "Manage health accounts", "User-friendly interface"],
+      "tech": "HTML5, CSS3, JavaScript, Bootstrap, CodeIgniter, PHP, MySQL",
+      "process": "Designed and developed over a period of 3 months using agile methodologies.",
+      "results": "Featured on school's website, received positive feedback from users.",
+      "liveSite": "https://example.com/live-site",
+      "figma": "https://figma.com/design-link",
+      "sourceCode": "https://github.com/username/repository"
+    },
+    {
+      "id": "work2",
+      "category": "web-app bootstrap",
+      "image": "images/v29_69.png",
+      "modalTitle": "Company Website",
+      "overview": "A website showcasing company information, product catalogs, and a collection of articles related to the company's offerings.",
+      "features": ["Company information", "Product catalogs", "Article collection"],
+      "tech": "HTML5, CSS3, JavaScript, Bootstrap",
+      "process": "Developed as part of a first-year project, incorporating feedback from peers and instructors.",
+      "results": "Received the highest grade in the IT130L-AM1 class, well-received by the company.",
+      "liveSite": "https://example.com/company-website",
+      "figma": "https://figma.com/company-design-link",
+      "sourceCode": "https://github.com/username/company-repository"
+    }
+  ]
+  
