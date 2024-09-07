@@ -3,11 +3,7 @@
       "id": "work1",
       "category": "web-app codeigniter bootstrap",
       "image": "images/v29_68.png",
-      "media": [
-        {"type": "image", "src": "images/v29_68.png"},
-        {"type": "video", "src": "videos/30 second timer.mp4"}
-      ],
-      "modalTitle": "Hospital Finder Platform",
+     "modalTitle": "Hospital Finder Platform",
       "modalName": "MediTect",
       "modalDate": "May 2021—July 2021",
       "overview": "MediTect is an easy-to-use website helping users find nearby hospitals and manage their health accounts effortlessly. This is a solution developed to address the needs of Filipinos and healthcare workers during the height of the pandemic.",
