@@ -344,6 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Bootstrap": "<i class='fab fa-bootstrap'></i> Bootstrap",
             "CodeIgniter": "<i class='fab fa-php'></i> CodeIgniter",
             "PHP": "<i class='fab fa-php'></i> PHP",
+            "Figma": "<i class='fab fa-figma'></i> Figma",
             "MySQL": "<i class='fas fa-database'></i> MySQL",
             "Heroku": "<i class='fas fa-cube'></i> Heroku",
             "Java": "<i class='fa fa-coffee'></i> Java",
@@ -382,6 +383,22 @@ document.addEventListener("DOMContentLoaded", () => {
             article1Button.style.display = 'inline-block';
           } else {
             article1Button.style.display = 'none';
+          }
+
+          const article2Button = document.getElementById('modalArticle2');
+          if (selectedWork.Article2) {
+            article2Button.href = selectedWork.Article2;
+            article2Button.style.display = 'inline-block';
+          } else {
+            article2Button.style.display = 'none';
+          }
+
+          const article3Button = document.getElementById('modalArticle3');
+          if (selectedWork.Article3) {
+            article3Button.href = selectedWork.Article3;
+            article3Button.style.display = 'inline-block';
+          } else {
+            article3Button.style.display = 'none';
           }
 
           const sourceCodeButton = document.getElementById('modalSourceCode');

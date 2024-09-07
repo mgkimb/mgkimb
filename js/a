@@ -1,0 +1,7 @@
+const article3Button = document.getElementById('modalarticle3');
+          if (selectedWork.article3) {
+            article3Button.href = selectedWork.article3;
+            article3Button.style.display = 'inline-block';
+          } else {
+            article3Button.style.display = 'none';
+          }
