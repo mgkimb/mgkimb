@@ -942,7 +942,6 @@ footer a:hover {
 .slick-next {
   right: 27px;
 }
-
 #education {
   background: #fff2f9;
   padding: 5%;
@@ -952,45 +951,46 @@ footer a:hover {
 #education h1 {
   margin: 2% 0;
 }
-  .education-timeline {
-      position: relative;
-      max-width: 1000px;
-      margin: 30px auto 0 auto;
-  }
 
-  .education-timeline::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 303px;
-    right: auto;
-    height: 100%;
-    width: 3px;
-    background: #ff0f91;
-    z-index: 0;
-  }
+.education-timeline {
+  position: relative;
+  max-width: 1000px; /* Adjust this to your preferred maximum width */
+  margin: 30px auto 0 auto;
+}
 
-  .education-timeline::after {
-    position: absolute;
-    content: '';
-    width: 3px;
-    height: 40px;
-    background: #ff0f91;
-    background: -webkit-linear-gradient(top, #ff0f91, rgba(52,152,219,0));
-    background: linear-gradient(to bottom, #ff0f91, rgba(52,152,219,0));
-    top: 100%;
-    left: 303px;
-  }
+.education-timeline::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 303px; /* Adjust as needed */
+  height: 100%;
+  width: 3px;
+  background: #ff0f91;
+  z-index: 0;
+}
 
-    .vtimeline-point {
-      position: relative;
-      display: block;
-      margin-bottom: 30px;
-    }
+.education-timeline::after {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 40px;
+  background: #ff0f91;
+  background: -webkit-linear-gradient(top, #ff0f91, rgba(52,152,219,0));
+  background: linear-gradient(to bottom, #ff0f91, rgba(52,152,219,0));
+  top: 100%;
+  left: 303px; /* Adjust as needed */
+}
 
-      .vtimeline-icon {
-        background: #ff0f91;
+.vtimeline-point {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.vtimeline-icon {
+
+  background: #ff0f91;
         width: 50px;
         height: 50px;
         color: white;
@@ -998,31 +998,41 @@ footer a:hover {
         border-radius: 50%;
         float: left;
         margin-left: 280px;
-      }
+}
 
-      .vtimeline-icon i {
-        display: block;
-        font-size: 2em;
-        margin-top: 10px;
-      }
+.vtimeline-icon i {
+  background: #ff0f91;
+  width: 50px;
+  height: 50px;
+  color: white;
+  position: absolute;
+  left: 303px; /* Adjust as needed */
+  border-radius: 50%;
+  margin-left: 0;
+
+  display: block;
+  font-size: 2em;
+  margin-top: 10px;
+}
 
 .vtimeline-date {
-  width: 260px;
+  width: 260px; /* Adjust width as needed */
   text-align: right;
   position: absolute;
   left: 0;
-  top : 10px;
-  font-weight: 300px;
+  top: 10px;
+  font-weight: 300;
   color: #1f1f1f;
 }
 
 .vtimeline-content {
   background: #1f1f1f;
-  margin-left: 350px;
+  margin-left: 350px; /* Adjust as needed */
   border: #ff0f91;
   padding: 25px;
   text-align: left;
   border-radius: 20px;
+  position: relative;
 }
 
 .vtimeline-content h3 {
@@ -1040,12 +1050,85 @@ footer a:hover {
   margin: 4px 0 15px 0;
 }
 
-
 .vtimeline-content p {
   color: #ffffff;
   font-size: 0.9em;
   margin: 0;
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .education-timeline {
+    margin: 30px 10%;
+  }
+
+  .education-timeline::before,
+  .education-timeline::after {
+    left: 50%;
+    width: 3px;
+  }
+
+  .vtimeline-icon {
+    background: #ff0f91;
+  width: 50px;
+  height: 50px;
+  color: white;
+  position: absolute;
+ 
+  border-radius: 50%;
+  margin-left: 0;
+    left: 10%;
+  }
+
+  .vtimeline-date {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+
+  .vtimeline-content {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px;
+    z-index: 1;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .vtimeline-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    left: 10%;
+    background: #ff0f91;
+ 
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 0;
+  }
+
+  .vtimeline-content {
+    padding: 10px;
+  }
+
+  .vtimeline-content h3 {
+    font-size: 1.2em;
+  }
+
+  .vtimeline-content h4 {
+    font-size: 0.9em;
+  }
+
+  .vtimeline-content p {
+    font-size: 0.8em;
+  }
+  .vtimeline-date {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+}
+
 
 @media (max-width: 767px) {
   .portfolio-banner__overlay--text h1 {
