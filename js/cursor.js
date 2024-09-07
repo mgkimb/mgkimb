@@ -307,7 +307,6 @@ document.addEventListener("DOMContentLoaded", () => {
           document.getElementById('workModalLabel').textContent = selectedWork.modalTitle;
           document.getElementById('workModalDate').textContent = selectedWork.modalDate;
 
-          // Populate carousel
           const carouselInner = document.getElementById('carouselInner');
           carouselInner.innerHTML = '';
           if (selectedWork.media && selectedWork.media.length) {
@@ -348,6 +347,12 @@ document.addEventListener("DOMContentLoaded", () => {
             "MySQL": "<i class='fas fa-database'></i> MySQL",
             "Heroku": "<i class='fas fa-cube'></i> Heroku",
             "Java": "<i class='fa fa-coffee'></i> Java",
+            "jQuery": "<i class='fa fa-js-square'></i> jQuery",
+            "Python": "<i class='fab fa-python'></i> Python",
+            "Hostinger": "<i class='fa fa-server'></i> Hostinger",
+            "AppSheet": "<i class='fa fa-chart-line'></i> AppSheet",
+            "Laravel": "<i class='fab fa-laravel'></i> Laravel",
+            "Notion": "<i class='fa fa-th-large'></i> Notion",
             "000webhost": "<i class='fa fa-globe'></i> 000webhost",
             "Trello": "<i class='fab fa-trello'></i> Trello"
           };
@@ -356,6 +361,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const liveSiteButton = document.getElementById('modalLiveSite');
           if (selectedWork.liveSite) {
             liveSiteButton.href = selectedWork.liveSite;
+            liveSiteButton.title = selectedWork.liveSite;
             liveSiteButton.style.display = 'inline-block';
           } else {
             liveSiteButton.style.display = 'none';

@@ -56,7 +56,8 @@
       "features": ["Comprehensive listings of school organizations, member registration, and profile management.", "Tools for applying, managing, and tracking events, along with a calendar view for upcoming activities.", "An administrative dashboard for overseeing registrations, event applications, and generating reports and analytics."],
       "tech": "HTML5, CSS3, JavaScript, Bootstrap, 000webhost, Figma",
       "process": "Managed the entire website development lifecycle, from requirements gathering to documentation. Solely developed the prototype and translated it into a functional website.",
-      "results": "Developed a Proof of Concept."
+      "results": "Developed the front-end of the website.",
+      "figma":"https://www.figma.com/proto/3qv7MVWRWInz9ErG1YYymd/Cardinal-Org?node-id=0-1&t=QjaGLMoTpsbCP8l3-1"
     },
     {
       "id": "work5",
@@ -84,7 +85,7 @@
       "tech": "HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL, 000webhost, Figma",
       "process": "Analyzed user requirements and independently developed a hosted solution, managing the entire process from planning to deployment to ensure it met user needs and enhanced overall functionality.",
       "results": "Well-received by the client.",
-       "figma": ""
+       "liveSite": "https://dioceseofcubao.000webhostapp.com/"
     },
     {
       "id": "work7",
@@ -138,8 +139,7 @@
       "features":["Utilizes machine learning algorithms to analyze plant photos for accurate disease identification, including apple scabs, by training models on extensive datasets.", "Visualizes plant disease trends on an interactive map, leveraging machine learning to predict disease spread and identify patterns based on historical and current data.", "Offers tailored advice and preventive measures for managing plant diseases."],
       "tech": "HTML5, CSS3, Python, Figma, Notion",
       "process": "Led the development of the solution and its user interface/user experience (UI/UX), independently translating a wireframe into a fully functional front-end website for plant disease detection.",
-      "results": "Submitted as an entry for 2023 SATU SMART 5th International Innovation competition.",
-      "figma": ""
+      "results": "Submitted as an entry for 2023 SATU SMART 5th International Innovation competition."
     },
     {
       "id": "work11",
@@ -179,7 +179,7 @@
       "modalName": "ProVisionSupply",
       "overview": "ProvisionSupply is a website for construction supply stores, including advanced modules for order processing and detailed reporting.",
       "features": ["Includes functionalities for quotation generation, point of sale (POS), and order status tracking, allowing for efficient processing of orders, generating sales orders and quotes, and managing reservations.", "rovides a dashboard to view overall sales, total orders, and forecasts inventory, along with detailed reports on sales, inventory, and reservation transactions.", "Manages customer profiles and product information, including account creation, profile updates, product selection, reservation, and real-time inventory tracking."],
-      "tech": "HTML5, CSS3, JavaScript, Bootstrap, 000webhost, JQuery, Hostinger, Notion",
+      "tech": "HTML5, CSS3, JavaScript, Bootstrap, 000webhost, jQuery, Hostinger, Notion",
       "process": "Led the entire development process by managing project timelines, designing and implementing core system functionalities, and ensuring seamless integration of modules. Collaborated with stakeholders to refine requirements and maintained comprehensive documentation for ongoing support and enhancements.",
       "results": "The system was highlighted in one of the papers presented at the 6th World Symposium on Software Engineering, held from September 13-15, 2024, in Kyoto, Japan.",
       "liveSite": "https://provisionsupply.site/"

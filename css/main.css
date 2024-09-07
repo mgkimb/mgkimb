@@ -1409,14 +1409,20 @@ border-color: #ddd;}.experience {
   margin-top: 5%;
 }
 .modal-datecreated p{
-  margin-right: 2%;
+  margin-right: 1%;
 }
 
 .carousel-item video{
-  width: 100%; /* or a specific value like 640px */
+  width: 100%;
   height: auto;
 }
 
 .worklink i {
   margin-right: 5px;
+}
+
+#modalLiveSite {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: default;
 }
