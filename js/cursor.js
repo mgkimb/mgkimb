@@ -444,3 +444,6 @@ $(document).ready(function() {
     }
   });
 });
+document.querySelector('.navbar__toggle').addEventListener('click', function() {
+  document.querySelector('.navbar__links').classList.toggle('active');
+});
