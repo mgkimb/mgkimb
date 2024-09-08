@@ -332,9 +332,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document.getElementById('modalProcess').textContent = selectedWork.process;
           document.getElementById('modalResults').textContent = selectedWork.results;
 
-          const dashElement = document.getElementById('modalDash');
-          dashElement.style.display = selectedWork.modalName && selectedWork.modalTitle ? 'inline' : 'none';
-
+         
           const techIcons = {
             "Git": "<i class='fab fa-git'></i> Git",
             "HTML5": "<i class='fab fa-html5'></i> HTML5",
