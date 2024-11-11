@@ -12,7 +12,7 @@
       "tech": "Git, HTML5, CSS3, JavaScript, Bootstrap, CodeIgniter, PHP, MySQL, Heroku, Trello",
       "process": "Performed front-end development, developed technical documentation, and conducted market research. Actively engaged in Agile Scrum meetings for efficient sprint planning and progress tracking. Assisted in managing project tasks with Trello and produced engaging creative materials, including PowerPoint presentations and animated videos, for impactful project pitches.",
       "results": "Featured on the Asia Pacific College website, this project was recognized as one of the best bootcamp projects among the Senior High School cohort of 2020-2021.",
-      "liveSite": "https://meditect.herokuapp.com/",      
+      "OfflineSite": "https://meditect.herokuapp.com/",      
       "Article2": "https://apc.edu.ph/programs/senior-high-school/"
     },
     {
@@ -27,7 +27,7 @@
       "tech": "HTML5, CSS3, JavaScript, Bootstrap, 000webhost, Trello",
       "process": "Managed the entire website development lifecycle, from requirements gathering and documentation to front-end development.",
       "results": "Received the highest grade in the IT130L-AM1 class, well-received by the company.",
-      "liveSite": "https://ynmotors.000webhostapp.com/"
+      "OfflineSite": "https://ynmotors.000webhostapp.com/"
     },
     {
       "id": "work3",
@@ -82,7 +82,7 @@
       "tech": "HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL, 000webhost, Figma",
       "process": "Analyzed user requirements and independently developed a hosted solution, managing the entire process from planning to deployment to ensure it met user needs and enhanced overall functionality.",
       "results": "Well-received by the client.",
-       "liveSite": "https://dioceseofcubao.000webhostapp.com/"
+       "OfflineSite": "https://dioceseofcubao.000webhostapp.com/"
     },
     {
       "id": "work7",
@@ -189,7 +189,7 @@
       "tech": "HTML5, CSS3, JavaScript, Bootstrap, 000webhost, jQuery, Hostinger, Notion",
       "process": "Led the entire development process by managing project timelines, designing and implementing core system functionalities, and ensuring seamless integration of modules. Collaborated with stakeholders to refine requirements and maintained comprehensive documentation for ongoing support and enhancements.",
       "results": "The system was highlighted in one of the papers presented at the 6th World Symposium on Software Engineering, held from September 13-15, 2024, in Kyoto, Japan.",
-      "liveSite": "https://provisionsupply.site/"
+      "OfflineSite": "https://provisionsupply.site/"
     },
     {
       "id": "work14",
@@ -217,6 +217,20 @@
       "process": "Developed the website's front-end, while also crafting documentation to support its development and usability.",
       "results": "The project is under consideration for inclusion in the 7th International Conference on Computational Intelligence and Intelligent Systems, scheduled to take place in Nagoya, Japan, from November 22-24, 2024."
       
+    },
+    {
+      "id": "work16",
+      "category": "web-app",
+      "image": "images/v29_80.png",
+      "modalTitle": "Regulatory Compliance Engine",
+      "modalName": "Compliance Checker",
+      "modalDate": "October 2024",
+      "overview": "Compliance Checker is a website for organizations, businesses, and Governance, Risk, and Compliance (GRC) teams who need to ensure their processes, policies, and documentation meet the requirements of regulatory standards and industry best practices.",
+      "features":["Automatically assesses compliance or potential non-compliance of user-submitted content against multiple regulatory frameworks.", "Supports a wide range of compliance standards, such as ISO 27001, NIST SCF 2.0, and PCI DSS v4.0.", "Performs textual analysis on the input content using regular expressions and string matching techniques to detect keywords and compliance criteria within selected controls."],
+      "tech": "HTML5, CSS3, Bootstrap, InfinityFree, Excel",
+      "process": "Solely conducted research into regulatory standards like ISO 27001, NIST SCF 2.0, and PCI DSS to identify relevant compliance controls and keywords. Mapped and organized keywords into CSV files for the system to reference during compliance checks, then developed the backend with PHP for processing input text and performing keyword matching. Built and deployed the frontend for user interaction, and tested the system for personal use.",
+      "results": "The project was used to enhance my internship performance by assisting in checking the compliance of Globe's current policies, streamlining the compliance assessment process, and ensuring alignment with industry standards.",
+      "liveSite": "http://compliance-checker.infinityfreeapp.com/"
     }
   ]
   

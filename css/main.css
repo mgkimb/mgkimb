@@ -1703,7 +1703,7 @@ button:disabled {
   margin-right: 5px;
 }
 
-#modalLiveSite {
+#modalOfflineSite {
   pointer-events: none;
   opacity: 0.5;
   cursor: default;
